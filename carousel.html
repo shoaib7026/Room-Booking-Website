@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testimonial Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+
+  <!-- Font Awesome for stars -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .section_title {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .title_color {
+      color: #333;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .testimonial_item {
+      border: 1px solid #eee;
+      background: #fff;
+      padding: 30px;
+      display: flex;
+      align-items: flex-start;
+      border-radius: 10px;
+    }
+
+    .testimonial_item img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .testimonial_item p {
+      color: #555;
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    .testimonial_item .sec_h4 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .testimonial_item .star i {
+      color: #f3c300;
+      font-size: 14px;
+      margin-right: 3px;
+    }
+
+    .owl-dots {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .owl-dot {
+      width: 12px;
+      height: 12px;
+      background: #ccc;
+      display: inline-block;
+      border-radius: 50%;
+      margin: 5px;
+    }
+
+    .owl-dot.active {
+      background: #f3c300;
+    }
+  </style>
+</head>
+<body>
+
+  <!--================ Testimonial Area =================-->
+  <section class="testimonial_area">
+    <div class="container">
+      <div class="section_title">
+        <h2 class="title_color">Testimonial from our Clients</h2>
+        <p>Here’s what our satisfied clients have to say.</p>
+      </div>
+
+      <div class="testimonial_slider owl-carousel">
+        <div class="testimonial_item">
+          <img src="https://i.pravatar.cc/80?img=1" alt="">
+          <div>
+            <p>I had an amazing experience with this company. Highly recommend!</p>
+            <h4 class="sec_h4">Ali Raza</h4>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-half-o"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial_item">
+          <img src="https://i.pravatar.cc/80?img=2" alt="">
+          <div>
+            <p>The service was quick and the team was very cooperative. Loved it!</p>
+            <h4 class="sec_h4">Fatima Noor</h4>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial_item">
+          <img src="https://i.pravatar.cc/80?img=3" alt="">
+          <div>
+            <p>They truly care about their clients. I’ll definitely return again!</p>
+            <h4 class="sec_h4">Shoaib Khan</h4>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star-o"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--================ End Testimonial Area =================-->
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- Initialize Owl Carousel -->
+  <script>
+    $(document).ready(function(){
+      $(".testimonial_slider").owlCarousel({
+        loop:true,
+        margin:20,
+        nav:false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:4000,
+        responsive:{
+          0:{items:1},
+          768:{items:2},
+          992:{items:3}
+        }
+      });
+    });
+  </script>
+</body>
+</html>
