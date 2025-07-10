@@ -56,7 +56,7 @@
 <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
 <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
 <script src="js/mail-script.js"></script>
-<script src="../js/stellar.js"></script>
+<script src="js/stellar.js"></script>
 <script src="vendors/lightbox/simpleLightbox.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/contact.js"></script>

@@ -21,7 +21,7 @@ include('dbcon.php');
     <div class="container p-5 " id="Roombooking">
   <h1 class="text-white text-center">Book Your Room</h1>
   <form action="showrooms.php" method="get">
-    <div class="row justify-content-between">
+    <div class="row  justify-content-between ">
       <!-- Check-in Date -->
       <?php $today = date('Y-m-d'); ?>
       <div class="col-md-2 p-3 rounded">
@@ -89,7 +89,7 @@ include('dbcon.php');
 
     <!-- Centered Button -->
     <div class="d-flex justify-content-center mt-4">
-      <button class="btn btn-info">Book Your Room</button>
+      <button class="btn btn-info"  >Book Your Room</button>
     </div>
   </form>
 </div>
